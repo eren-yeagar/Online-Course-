@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+</head>
+<body>
+    <h1>Online Course Registration</h1>
+    <form action="process_registration.php" method="POST">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="web_dev">Web Development</option>
+            <option value="data_science">Data Science</option>
+            <option value="design">Graphic Design</option>
+            <option value="marketing">Digital Marketing</option>
+        </select><br><br>
+
+        <label for="start_date">Preferred Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
